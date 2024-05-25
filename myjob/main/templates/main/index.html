@@ -1,0 +1,140 @@
+{%extends 'main/base.html'%}
+
+{% block top_eng%}
+    <section>
+        <div class = 'top'>
+            <div class = 'first_left col'> 
+                <h1 class = 'myname'>MYKYTA HONCHARENKO</h1>
+                <p class = 'ttext'>SOFTWARE ENGINEER</p>
+                <div class = 'language'>
+                    <a class = 'linkq' href="/">ENG</a>
+                    <a class = 'linkq' href="/ukr">UKR</a>
+                    <a class = 'linkq' href="/deu">DEU</a>
+                </div>
+                <div class = 'hreff'>
+                    <a class = 'link' href="#about">ABOUT</a>
+                    <a  class = 'link' href="#contact">CONTACT</a>
+                    <a class = 'link' href="#works">WORKS</a>
+                    <a class = 'link' href="#arts">3D ARTS</a>
+                    <a class = 'link' href="#web">WEB</a>
+                    <a class = 'link' href="#desktop">DESKTOP</a>
+                    
+                </div>
+            </div>
+            <div class = 'first_right'> 
+                <img src="static/main/img/myfoto.png" class="myfoto" alt="">
+            </div>
+        </div>
+    </section>    
+{%endblock%}
+
+{%block about_eng%}
+    <section>
+        <div class = 'about' id = 'about'>
+
+                <div class = 'about_left'>
+                    <div class = ''>
+                        <h1 class = 'ab_title'>❘ ABOUT ❘</h1>
+                    </div>
+                    <div class = 'content_info'>
+                        <div class = 'leftl'>
+                            <img src="static/main/img/DSC00070.jpg" class="ab_foto" alt="">
+                        </div>
+                        
+                        <div class = 'leftr'>
+                            <h1 class = 'myinfo_title'>i AM</h1>
+                            <p class = 'myinfo'>
+                                My name is Mykyta, and I am a third-year student majoring in Software Engineering. I possess skills in developing various software products using the Python programming language. My experience includes developing neural networks, Telegram bots, web applications, and assistants utilizing natural language models. Additionally, I have experience in 3D modeling, utilizing the currently popular Blender program. You can view my work in the relevant sections of the website.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class = 'about_right col'>
+                    <h1 class = 'list_tittle'>SKILS</h1>
+                    <ul>
+                        {% for el in skill %}
+                            <li class ='list_eit'>{{ el.tittle }}</li>
+                        {%endfor%}
+                        
+                    </ul>
+                </div>
+            
+        </div>
+    </section>
+{%endblock%}
+
+{%block contact_eng%}
+    <section>
+        <div class = 'contact ' id="contact">
+            
+            <div class = 'block_title col'>
+                <h1 class = 'con_title'> ❘ CONTACT  ❘</h1>
+            </div>
+
+            <div class= 'con_info'>
+                <div class= 'block_info'>
+                    <div class= 'block_info1'>
+                        <h1 class= 'block_info1_txt'> ❘ TELEGRAM ❘ </h1>
+                    </div>
+                </div>
+                <div class= 'block_info'>
+                    <h1 class= 'block_info1_txt'> ❘ MAIL ❘ </h1>
+                </div>
+                <div class= 'block_info'>
+                    <h1 class= 'block_info1_txt'> ❘ GIT HUB ❘ </h1>
+                </div>
+                <div class= 'block_info'>
+                    <h1 class= 'block_info1_txt'> ❘ PHONE ❘ </h1>
+                </div> 
+            </div> 
+                        
+        </div>
+    </section>
+{%endblock%}
+<div class= ''></div>
+{%block works_eng %}
+    <section>
+        <div class = 'works' id="works">
+            <h1 class = 'artt_title'>❘ WORKS ❘</h1>
+            <h1>AS soon AS posible</h1>
+        </div>
+    </section>
+{%endblock%}
+
+{%block arts_eng%}
+    <section>
+        <div class = 'arts' id="arts">
+            <h1 class = 'artt_title'>❘ ARTS ❘</h1>
+            <h1></h1>
+            <div class ='slidder'>
+                {% for el in image|slice:":6" %}
+                <img src="{{ el.image.url }}" class="bb" alt="">
+            {% endfor %}
+            </div>
+            <div class = 'block_paint col'>
+                <a class = 'art_title ' href="/arts">MORE</a>
+            </div>
+
+        </div>
+    </section>
+{%endblock%}
+
+{%block web_eng%}
+    <section>
+        <div class = 'web' id="web">
+            <h1 class = 'artt_title'>❘ WEB ❘</h1>
+            <h1>Веб застосунки</h1>
+        </div>
+    </section>
+{%endblock%}
+        
+{%block desktop_eng%}
+    <section>
+        <div class = 'desktop' id="desktop">
+            <h1 class = 'artt_title'>❘ DESKTOP ❘</h1>
+            <h1>Десктоп застосунки</h1>
+        </div>
+    </section>
+{%endblock%}    
+        

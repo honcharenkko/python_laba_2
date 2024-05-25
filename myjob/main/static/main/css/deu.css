@@ -1,0 +1,346 @@
+html { 
+    scroll-snap-type: y mandatory;
+  }
+
+
+.col{
+    background-color: #29105A;
+}
+section{
+    scroll-snap-align: center;
+    scroll-behavior: smooth;
+    scroll-snap-stop: always; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top{
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.first_left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  
+}
+
+.first_right{
+    display: flex;
+    justify-content: center; /* по горизонтали */
+    align-items: center; /* по вертикали */
+    
+}
+.myname{
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+}
+.ttext{
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid;
+}
+.myfoto{
+    padding: 0%;
+    width: 100%;
+    height: 85%;
+}
+
+.hreff {
+    display: flex;
+    justify-content: space-between; /* Распределение объектов с равным пространством между ними */
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 5px; /* Добавляем отступ внутри контейнера */
+  }
+  
+  .language{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 150px;
+}
+
+  .linkq {
+    font-size: 18px;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Унаследуем цвет текста от родительского элемента */
+    margin: 0; /* Увеличиваем расстояние между объектами */
+  }
+
+  .link {
+    font-size: 18px;
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Унаследуем цвет текста от родительского элемента */
+    margin: 0 25px; /* Увеличиваем расстояние между объектами */
+  }
+
+
+  /*ABOUT SECTION*/
+
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    
+    
+}
+.about_info{
+    display: flex;
+    height: 100vh;
+}
+.about_left{
+    
+    margin: 0;
+    width: 80%;
+}
+
+.content_info{
+    display: flex;
+}
+
+.leftl{
+    width: 50%;
+    height: 100vh;
+
+}
+
+.leftr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding-top: 150px;
+    padding-right: 100px;
+    color: black;
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+.about_right{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    
+    margin: 0;
+    height: 100vh;
+    
+}
+
+.ab_title{
+    margin: 15px 0 0 15px;
+    font-weight: light;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+.myinfo{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.ab_foto{
+    margin: 150px;
+    height: 50%;
+    
+}
+
+.list_tittle{
+    letter-spacing: 20px;
+    font-size: 60px;
+    font-weight: light;
+}
+
+.list_eit{
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+/*CONTACT SECTION*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+  }
+
+.block_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    
+}
+ 
+.con_title{
+    color: rgb(255, 255, 255);
+
+    font-weight: light;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+
+.con_info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+
+    
+}
+.block_info{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 100vh;
+    background-color: #29105A;
+    color: white;
+}
+
+
+
+.block_info1_txt{
+    margin: 30px 0;
+    font-size: 50px;
+    font-weight: lighter;
+    transition: transform 0.3s ease-in-out;
+}
+.block_info1_txt:hover {
+    transform: translateY(-50px); /* Піднімаємо текст вверх при наведенні */
+}
+
+.block_info1_txt:hover::after {
+    content: "@honcharenkko"; /* З'являється новий текст при наведенні */
+}
+
+
+  /*WORKS SECTION*/
+
+  .works{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+}
+
+
+  /*ARTS SECTION*/
+
+  .arts{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+}
+
+.slidder {
+    display: grid;
+    align-items: center;
+    
+    margin-top: 50px;
+
+    background-color: rgb(221, 221, 221);
+    width: 90%;
+    height: 500px;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* Обязательно прокручивать по горизонтали */
+
+    overscroll-behavior-inline: contain;
+}
+
+
+.bb{
+    scroll-snap-align: start;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 450px;
+    
+    margin: 5px;
+    padding: 0 3rem;
+
+}
+
+.block_paint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+    width: 100%;
+    
+}
+
+.art_title{
+    text-decoration: none;
+    color: white;
+    margin: 15px 0 0 15px;
+    font-weight: light;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+
+.artt_title{
+    color: rgb(0, 0, 0);
+
+    font-weight: light;
+    letter-spacing: 10px;
+    font-size: 60px;
+}
+  /*WEB SECTION*/
+
+  .web{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+}
+
+  /*DESKTOP SECTION*/
+
+.desktop{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+
+    flex-direction: column;
+    align-items: center; /* по вертикали */
+}
